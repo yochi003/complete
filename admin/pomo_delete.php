@@ -1,0 +1,14 @@
+<?php
+include 'condb.php';
+
+$id = $_GET['id'];
+$sql = "DELETE FROM promotion WHERE pomo_id = '$id'";
+
+if(mysqli_query($conn,$sql)){
+    echo "<script> alert('ลบข้อมูลเรียบร้อย');</script>";
+    echo "<script> window.location='sh_pomo.php';</script>";
+}else{
+    echo "<script> alert('ลบข้อมูลไม่สำเร็จ'); </script>";
+}
+
+?>
