@@ -15,8 +15,8 @@ $address = $_POST['address'];
     ctm_sname = '$sname',
     ctm_user	 = '$username',
     ctm_password = '$password',
-    ctm_email = ' $email',
-    ctm_phone = ' $phone',
+    ctm_email = '$email',
+    ctm_phone = '$phone',
     ctm_address = '$address'
     WHERE customer_id='$cusid' ";
 

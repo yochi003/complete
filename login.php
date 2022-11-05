@@ -11,7 +11,12 @@
 
     <title>เข้าสู่ระบบ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+        * {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
     <!-- Bootstrap v5.1.3 CDNs -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -24,6 +29,7 @@
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        
 <body>
 
     <div class="login">

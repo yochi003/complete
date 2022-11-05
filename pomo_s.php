@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'condb.php';
 ?>
 <!DOCTYPE html>
@@ -35,6 +36,7 @@ include 'condb.php';
             <div class="col-sm-3">
                 <div class="text-center">
                     <img src="./pomo/<?= $row['pomo_img'] ?>" width="300px" height="450" class="mt-5 p-2 my-2 border">
+                    รายละเอียดโปรโมชั่น : <?=$row['detail_pomo']?> <br>
                     <br>
                 </div>
                 <br>

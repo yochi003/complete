@@ -35,14 +35,17 @@ include 'condb.php';
                 เพิ่มข้อมูลวัตถุดิบ
             </div>
                 <form name="form1" method="post" action="insert_mat.php" enctype="multipart/form-data">
+                    <div>
                 <label> ชื่อวัตถุดิบ</label>
                 <input type="text" name="matname" class="form-control" required>
-                <label> จำนวนวัตถุดิบ </label>
+                </div>
+                <!-- <label> จำนวนวัตถุดิบ </label>
                 <input type="number" name="matnum" class="form-control"required> <br>
-
-
+ -->
+                <div class="mt-2">
                 <button type="submit" class="btn btn-success">บันทึก</button>
                 <a class="btn btn-danger" href="sh_mat.php" role="button">ยกเลิก</a>
+                </div>
                 </form>
             </div>
         </div>

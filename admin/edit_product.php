@@ -61,10 +61,6 @@ $p_typeID=$rs['type_id'];
                 </select>
                 <label> ราคา </label>
                 <input type="number" name="price" class="form-control"  value="<?php echo $rs['price']?>" >
-                <label class="form-check-label" for="flexSwitchCheckChecked">สินค้าขายดี</label>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="product_best" name="product_best" <?php if($rs['product_best'] == '1'){ echo "checked"; }?> >
-                </div>
                 <label> จำนวน </label>
                 <input type="number" name="num" class="form-control" value="<?php echo $rs['amount']?>" > <br>
                 <label> รูปภาพ </label><br><br>

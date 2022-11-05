@@ -45,6 +45,8 @@ $rs=mysqli_fetch_array($result);
                  <img src="../pomo/<?php echo $rs['pomo_img']?>"  width="100px" height="150px" ><br><br>
                 <input type="file" name="file1" > <br> <br>
                 <input type="hidden" name="txtimg" class="form-control" value="<?php echo $rs['pomo_img']?>" >
+                <label> รายละเอียดโปรโมชั่น</label>
+                <input type="text" name="detailpomo" class="form-control" value="<?php echo $rs['detail_pomo']?>" >
                  
                 <button type="submit" class="btn btn-success">แก้ไข</button>
                 <a class="btn btn-danger" href="sh_pomo.php" role="button">ยกเลิก</a>

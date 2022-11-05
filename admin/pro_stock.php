@@ -87,7 +87,7 @@ $row4=mysqli_fetch_array($hand4);
 
 ?>
                                 <tr>
-                                    <td><img src="../image/<?=$row['image']?>" width="100" height="150"></td>
+                                    <td><img src="./image/<?=$row['image']?>" width="100" height="150"></td>
                                     <td><?=$row['pro_id']?></td>
                                     <td><?=$row['pro_name']?></td>
                                     <!-- <td><?=$row['detail']?></td> -->

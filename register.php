@@ -41,48 +41,47 @@
 
                 </div>
                 <div class="form-group was-validated">
-                <label class="form-label text-success">ชื่อผู้ใช่</label>
+                <label class="form-label text-success">ชื่อผู้ใช้</label>
                 <input class="form-control" type="text" name="ctm_user" required>
                 <div class="invalid-feedback">
 
                 </div>
             </div>
             <div class="form-group was-validated">
-                        <label class="form-label text-success">รหัสผ่าน</label>
-                        <input class="form-control" type="password" name="ctm_password" id="myPassword" required>
-                        <div class="invalid-feedback">
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" onclick="passShow()">
-                            <label>แสดงรหัสผ่าน</label>
-                        </div>
+                <label class="form-label text-success">รหัสผ่าน</label>
+                <input class="form-control" type="password" name="ctm_password1" id="myPassword" required>
+                <div class="invalid-feedback">
+                </div>
+                <div class="form-group was-validated">
+                    <label class="form-label text-success">ยืนยันรหัสผ่าน</label>
+                    <input class="form-control" type="password" name="ctm_password2" id="myPassword" required>
+                    <div class="invalid-feedback">
+                    </div>
+                <!-- <div class="form-group">
+                <input type="checkbox" onclick="passShow()">
+                <label>แสดงรหัสผ่าน</label>
+                </div> -->
+            </div>
             <div class="form-group was-validated">
                 <label class="form-label text-success">อีเมล</label>
                 <input class="form-control" type="email" name="ctm_email" required>
                 <div class="invalid-feedback">
-
                 </div>
             </div>
             <div class="form-group was-validated">
                 <label class="form-label text-success">เบอร์โทร</label>
                 <input class="form-control" type="text" name="ctm_phone" required>
                 <div class="invalid-feedback">
-
                 </div>
-                <div class="form-group was-validated">
-                    <label class="form-label text-success">ที่อยู่</label>
-                    <input class="form-control" type="text" name="ctm_address" required>
-                    <div class="invalid-feedback">
-
+            <div class="form-group was-validated">
+                <label class="form-label text-success">ที่อยู่</label>
+                <input class="form-control" type="text" name="ctm_address" required>
+                <div class="invalid-feedback">
+            </div> 
+                <input class="btn btn-danger w-100" name="reg_user" type="submit" value="สมัครสมาชิก">
+                    <div class="mt-2">
+                        <a href="login.php" class="btn btn-primary w-100">เข้าสู่ระบบ</a>
                     </div>
-
-
-                
-                        
-                        <input class="btn btn-danger w-100" type="submit" value="สมัครสมาชิก">
-                        <div class="mt-2">
-                            <a href="login.php" class="btn btn-primary w-100">เข้าสู่ระบบ</a>
-                        </div>
         </form>
 
     </div>

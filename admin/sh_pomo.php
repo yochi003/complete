@@ -28,13 +28,14 @@ include 'condb.php';
                             <div class="card-header">
     <div class="container">
     <div class="alert alert-primary  h2 text-center mb-4 mt-4" role="alert">
-                แสดงข้อมูลโปรโมชั้น
+                ข้อมูลโปรโมชั่น
             </div>
             <a class="btn btn-primary mb-4" href="fr_pomo.php" role="button">เพิ่มสินค้า+</a> <br>
-    <table class="table table-striped table-hover">
+            <table id="datatablesSimple" class="table table-striped table-hover">
            <tr>
-            <th>รหัสโปรโมชั่น</th>
+            <!-- <th>รหัสโปรโมชั่น</th> -->
             <th>รูปภาพ</th>
+            <th>รายละเอียดโปรโมชั่น</th>
             <th>ลบ</th>
            </tr> 
 <?php
@@ -43,8 +44,9 @@ $hand = mysqli_query($conn,$sql);
 while($row=mysqli_fetch_array($hand)){
 ?>
            <tr>
-            <td><?=$row['pomo_id']?></td>
+            <!-- <td><?=$row['pomo_id']?></td> -->
             <td><image src="../pomo/<?=$row['pomo_img']?>" width="100px" height="150px"></td>
+            <td><?=$row['detail_pomo']?></td>
             <td><a href="pomo_delete.php?id=<?=$row['pomo_id']?>" class="btn btn-danger">ลบ</a></td>
            </tr>
            <?php
@@ -56,3 +58,10 @@ while($row=mysqli_fetch_array($hand)){
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>

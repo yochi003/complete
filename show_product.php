@@ -40,13 +40,13 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-     <img class="img-fluid" src="./image/pomo3.jpg" alt="..." />
+     <img class="img-fluid" src="./image/pomo3.jpg" />
     </div>
     <div class="carousel-item">
-     <img class="img-fluid" src="./image/pomo1.jpg" alt="..." />
+     <img class="img-fluid" src="./image/pomo1.jpg" />
     </div>
     <div class="carousel-item">
-    <img class="img-fluid" src="./image/pomo3.jpg" alt="..." />
+    <img class="img-fluid" src="./image/pomo4.jpg"  />
 </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -65,19 +65,27 @@ include 'navbar.php';
 ?>        
 <body>
 <div class = "container">
+    <div class ="row mt-3">
+        <div class="card bg-secondary">
+            <div class="card-body">
+                <h4 class="text-center text-white">Coffee Shop ยินดีต้อนรับ : <?php echo $_SESSION['ctm_name'].'  '.$_SESSION['ctm_sname']?></h4>
+            </div>
+        </div>
+    </div>
         <div class = "row">
             <?php
-            $sql = "SELECT * FROM product WHERE amount > 0 ORDER BY pro_id";
+            $sql = "SELECT * FROM product WHERE amount > 0 ORDER BY pro_id ";
             $result = mysqli_query($conn, $sql);
             while($row=mysqli_fetch_array($result)){
             ?>
             <div class = "col-sm-3">
                 <div class="text-center">
                 <img src="admin/image/<?=$row['image']?>" width="300px" height="450" class="mt-5 p-2 my-2 border"> <br>
-                ID : <?=$row['pro_id']?><br>
+                <!-- ID : <?=$row['pro_id']?><br> -->
                 <b class = "text-success"><?=$row['pro_name']?></b><br>
                 ราคา <b class="text-danger"> <?=$row['price']?> </b> บาท <br>
-                <a class = "btn btn-outline-success mt-4" href="sh_product_detail.php?id=<?=$row['pro_id']?>">รายละเอียด</a>
+                <a class = "btn btn-outline-success mt-4" href="order.php?id=<?=$row['pro_id']?>">เพิ่มในตะกร้า</a>
+                <!-- <a class = "btn btn-outline-success mt-4" href="sh_product_detail.php?id=<?=$row['pro_id']?>">รายละเอียด</a> -->
                 </div>
                 <br>
             </div>

@@ -28,12 +28,12 @@ include 'condb.php';
 <div class="card-header">
     <div class="container">
     <div class="alert alert-primary  h2 text-center mb-4 mt-4" role="alert">
-    แสดงข้อมูลลูกค้า
+    ข้อมูลลูกค้า
             </div>
             <a class="btn btn-primary mb-4" href="fr_cus.php" role="button">เพิ่มข้อมูลลูกค้า+</a> <br>
     <table id="datatablesSimple" class="table table-striped table-hover">
            <tr>
-            <th>รหัสลูกค้า</th>
+            <!-- <th>รหัสลูกค้า</th> -->
             <th>ชื่อ</th>
             <th>นามสกุล</th>
             <th>ชื่อผู้ใช้</th>
@@ -46,12 +46,12 @@ include 'condb.php';
            </tr> 
            
 <?php
-$sql="SELECT * FROM customer WHERE customer_id ";
+$sql="SELECT * FROM customer WHERE customer_id ORDER BY customer_id DESC";
 $hand = mysqli_query($conn,$sql);
 while($row=mysqli_fetch_array($hand)){
 ?>
            <tr>
-            <td><?=$row['customer_id']?></td>
+            <!-- <td><?=$row['customer_id']?></td> -->
             <td><?=$row['ctm_name']?></td>
             <td><?=$row['ctm_sname']?></td>
             <td><?=$row['ctm_user']?></td>

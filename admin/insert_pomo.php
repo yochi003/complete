@@ -1,6 +1,6 @@
 <?php
 include 'condb.php';
-
+$detail_pomo =$_POST['pomo'];
 //อัพโหลดรูปภาพ
 if (is_uploaded_file($_FILES['file2']['tmp_name'])) {
     $new_image_name = 'po_'.uniqid().".".pathinfo(basename($_FILES['file2']['name']), PATHINFO_EXTENSION);
@@ -9,8 +9,8 @@ if (is_uploaded_file($_FILES['file2']['tmp_name'])) {
     } else {
     $new_image_name = "";
     }
-    $sql="INSERT INTO promotion(pomo_img) 
-    VALUES('$new_image_name') ";
+    $sql="INSERT INTO promotion(pomo_img,detail_pomo) 
+    VALUES('$new_image_name','$detail_pomo') ";
     $result=mysqli_query($conn,$sql);
     if($result){
         echo "<script> alert('บันทึกข้อมูลเรียบร้อย');</script>";

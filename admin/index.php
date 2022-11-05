@@ -37,7 +37,12 @@ $row4=mysqli_fetch_array($hand4);
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>coffee</title>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+        * {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -58,7 +63,7 @@ $row4=mysqli_fetch_array($hand4);
                 <div class="row">
                     <div class="col-xl-3 col-md-6">
                         <div class="card bg-primary text-white mb-4">
-                            <div class="card-body">รายงานสรุปยอดขาย(ยังไม่ได้ชำระเงิน)<h4><?=$row1['order_no']?></h4></div>
+                            <div class="card-body">รายการสั่งซื้อสินค้า(ยังไม่ได้ชำระเงิน)<h4><?=$row1['order_no']?></h4></div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
                                 <a class="small text-white stretched-link" href="report_order.php">View Details</a>
                                 <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -67,7 +72,7 @@ $row4=mysqli_fetch_array($hand4);
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="card bg-success text-white mb-4">
-                            <div class="card-body">รายงานสรุปยอดขาย(ชำระเงินเเล้ว)<h4><?=$row2['order_yes']?></h4></div>
+                            <div class="card-body">รายการสั่งซื้อสินค้า(ชำระเงินเเล้ว)<h4><?=$row2['order_yes']?></h4></div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
                                 <a class="small text-white stretched-link" href="report_order_yes.php">View Details</a>
                                 <div class="small text-white"><i class="fas fa-angle-right"></i></div>

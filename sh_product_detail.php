@@ -26,7 +26,7 @@ include 'navbar.php';
                 <img src="admin/image/<?=$row['image']?>" width = "350px" class="mt-2 p-2 my-2 border" />
             </div>
             <div class = "col-md-6">
-            ID : <?=$row['pro_id']?> <br>
+            <!-- ID : <?=$row['pro_id']?> <br> -->
             <b class = "text-success"><?=$row['pro_name']?></b> <br>
             ประเภทสินค้า : <?=$row['type_name']?> <br>
             ราคา : <b class = "text-danger"><?=$row['price']?></b> บาท <br>

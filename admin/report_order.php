@@ -8,7 +8,12 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>report</title>
-        
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+        * {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -133,8 +138,6 @@
                     </div>
                 </main>
                 <?php include 'footer.php'   ?>
-                
-
             </div>
         </div>
     </body>
@@ -151,13 +154,13 @@
 function del(mypage){
     var agree=confirm('คุณต้องการยกเลิกใบสั่งซื้อสินค้าหรือไม่');
     if(gree){
-        window.location=mypage;
+        window.location = mypage;
     }
 }
 function del1(mypage){
     var agree=confirm('คุณต้องการปรับสถานะการชำระเงินหรือไม่');
     if(gree){
-        window.location=mypage;
+        window.location = mypage;
     }
 }
 </script>

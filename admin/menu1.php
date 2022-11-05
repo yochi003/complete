@@ -18,6 +18,7 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="profile_am.php">โปรไฟล์</a></li>
                         <li><a class="dropdown-item" href="logout_am.php">ออกจากระบบ</a></li>
                     </ul>
                 </li>
@@ -28,24 +29,12 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <div class="sb-sidenav-menu-heading"></div>
                             <a class="nav-link" href="index.php">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-house"></i></div>
                                 หน้าเเรก
                             </a>
-                            <div class="sb-sidenav-menu-heading">รายงาน</div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                รายงานการขาย
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="show-product2.php">รายงานการขายวัตุดิบ</a>
-                                    <a class="nav-link" href="show_product1.php">รายงานสรุปยอดขายตามช่วงเวลา</a>
-                                    <a class="nav-link" href="show-product3.php">รายงานการขายทั้งหมด</a>
-                                </nav>
-                            </div>
+                            
                             
                                 
                               
@@ -84,23 +73,28 @@
                                 ข้อมูลวัตถุดิบ
                             </a>
                             
-                            <a class="nav-link" href="report_order.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-wallet"></i></div>
-                                ข้อมูการสั่งซื้อ
-                            </a>
-                            <a class="nav-link" href="report_order_yes.php">
-                                <div class="sb-nav-link-icon"><i class="fa-brands fa-cc-visa"></i></div>
-                                ข้อมูลการชำระเงิน
-                            </a>
+                            
                             <a class="nav-link" href="sh_pomo.php">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-wallet"></i></div>
                                 ข้อมูลโปรโมชั่น
                             </a>
-                            <a class="nav-link" href="report_product_best.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-heart"></i></div>
-                                ข้อมูลสินค้าขายดี
+                            <a class="nav-link" href="report_order.php">
+                                <div class="sb-nav-link-icon"><i class="fa-brands fa-cc-visa"></i></div>
+                                เรียกดูการชำระเงิน
                             </a>
-                            
+                            <div class="sb-sidenav-menu-heading">รายงาน</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                รายงานการขาย
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="show-product2.php">รายงานการขายวัตุดิบ</a>
+                                    <a class="nav-link" href="show_product1.php">รายงานสรุปยอดขายตามช่วงเวลา</a>
+                                    <a class="nav-link" href="show-product3.php">รายงานการขายทั้งหมด</a>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                     

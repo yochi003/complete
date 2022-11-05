@@ -2,6 +2,8 @@
 include 'condb.php';
 $pomo_id= $_POST['pomo_id'];
 $pomo_img = $_POST['txtimg'];
+$pomo = $_POST['pomo'];
+
 if (is_uploaded_file($_FILES['file1']['tmp_name'])) {
     $new_image_name = 'pr_'.uniqid().".".pathinfo(basename($_FILES['file1']['name']), PATHINFO_EXTENSION);
     $image_upload_path = "../pomo/".$new_image_name;
@@ -12,7 +14,8 @@ if (is_uploaded_file($_FILES['file1']['tmp_name'])) {
 
     $sql = "UPDATE promotion SET
     pomo_img = '$new_image_name',
-    WHERE pomo_id='$pomo_id'";
+    detail_pomo = '$pomo',
+    WHERE pomo_id ='$pomo_id'";
 
 $result=mysqli_query($conn,$sql);
 if($result){
