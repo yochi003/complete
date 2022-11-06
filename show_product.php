@@ -66,11 +66,11 @@ include 'navbar.php';
 <body>
 <div class = "container">
     <div class ="row mt-3">
-        <div class="card bg-secondary">
-            <div class="card-body">
+        <!-- <div class="card bg-secondary"> -->
+            <!-- <div class="card-body">
                 <h4 class="text-center text-white">Coffee Shop ยินดีต้อนรับ : <?php echo $_SESSION['ctm_name'].'  '.$_SESSION['ctm_sname']?></h4>
-            </div>
-        </div>
+            </div> -->
+        <!-- </div> -->
     </div>
         <div class = "row">
             <?php

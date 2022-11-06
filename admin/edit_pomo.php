@@ -47,7 +47,11 @@ $rs=mysqli_fetch_array($result);
                 <input type="hidden" name="txtimg" class="form-control" value="<?php echo $rs['pomo_img']?>" >
                 <label> รายละเอียดโปรโมชั่น</label>
                 <input type="text" name="detailpomo" class="form-control" value="<?php echo $rs['detail_pomo']?>" >
-                 
+                <label class="form-check-label" for="flexSwitchCheckChecked">เปิด</label>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="pomo_open" name="pomo_open" <?php if($rs['pomo_open'] == '1'){ echo "checked"; }?> >
+                </div> 
+
                 <button type="submit" class="btn btn-success">แก้ไข</button>
                 <a class="btn btn-danger" href="sh_pomo.php" role="button">ยกเลิก</a>
                 </form>

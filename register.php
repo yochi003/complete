@@ -49,7 +49,7 @@
             </div>
             <div class="form-group was-validated">
                 <label class="form-label text-success">รหัสผ่าน</label>
-                <input class="form-control" type="password" name="ctm_password1" id="myPassword" required>
+                <input class="form-control" type="password" name="ctm_password" id="myPassword" required>
                 <div class="invalid-feedback">
                 </div>
                 <div class="form-group was-validated">

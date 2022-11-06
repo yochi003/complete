@@ -13,8 +13,8 @@ if ($row > 0) {
     $_SESSION["admin_username"] = $row['admin_username'];
     $_SESSION["admin_password"] = $row['admin_password'];
     $_SESSION["adminid"] = $row['admin_id'];
-    $_SESSION["name"] = $row['name'];
-    $_SESSION["surname"] = $row['surname']; 
+    $_SESSION["name"] = $row['ad_name'];
+    $_SESSION["surname"] = $row['ad_surname']; 
     header("location:index.php");
 } else {
     header("location:login_am.php");

@@ -11,7 +11,9 @@
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div> -->
+                    
             </form>
+            
             <!-- Navbar-->
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
@@ -33,12 +35,7 @@
                             <a class="nav-link" href="index.php">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-house"></i></div>
                                 หน้าเเรก
-                            </a>
-                            
-                            
-                                
-                              
-                                
+                            </a> 
                             </a>
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
@@ -50,11 +47,8 @@
                                         <nav class="sb-sidenav-menu-nested nav">
                                             <a class="nav-link" href="fr_product.php">เพิ่มข้อมูลสินค้า</a>
                                         </nav>
-                                    </div>
-                                    
+                                    </div>   
                             </div>
-                            
-
                             <div class="sb-sidenav-menu-heading">จัดการข้อมูล</div>
                             <a class="nav-link" href="sh_cus.php">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-user"></i></div>
@@ -72,8 +66,6 @@
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-cart-shopping"></i></div>
                                 ข้อมูลวัตถุดิบ
                             </a>
-                            
-                            
                             <a class="nav-link" href="sh_pomo.php">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-wallet"></i></div>
                                 ข้อมูลโปรโมชั่น

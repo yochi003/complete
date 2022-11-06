@@ -4,7 +4,6 @@ $matid = (isset($_GET['id'])) ? $_GET['id'] : '';
 $sql = "SELECT * FROM staple WHERE material_id='$matid' ";
 $result= mysqli_query($conn,$sql);
 $rs=mysqli_fetch_array($result);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,21 +22,19 @@ $rs=mysqli_fetch_array($result);
             font-family: 'Kanit', sans-serif;
         }
     </style>
-    
 <body>
 <?php include 'menu1.php'   ?>
 <div id="layoutSidenav_content">
 <main>
-                    <div class="container-fluid px-4">
-                        <div class="card mb-4 mt-4">
-                            <div class="card-header">
+<div class="container-fluid px-4">
+<div class="card mb-4 mt-4">
+   <div class="card-header">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
             <div class="alert alert-primary  h4 text-center mb-4" role="alert">
             แก้ไขข้อมูลวัตถุดิบ
             </div>
-
                 <form name="form1" method="post" action="update_mat.php" enctype="multipart/form-data">
                 <label> รหัสวัตถุดิบ</label>
                 <input type="text" name="matid" class="form-control" readonly value="<?php echo $rs['material_id']?>" >

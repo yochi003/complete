@@ -51,8 +51,14 @@ $row4=mysqli_fetch_array($hand4);
 </head>
 
 <body class="sb-nav-fixed">
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="text-center">Coffee Shop ยินดีต้อนรับ : <?php echo $_SESSION['name'].'  '.$_SESSION['surname']?></h4>
+            </div>
+        </div>
+    </div>
     <?php include 'menu1.php';   ?>
-
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid px-4">

@@ -38,7 +38,7 @@ $rs=mysqli_fetch_array($result);
             <div class="alert alert-primary  h4 text-center mb-4" role="alert">
                 เพิ่มข้อมูลวัตถุดิบ
             </div>
-                <form name="form1" method="post" action="#" enctype="multipart/form-data">
+                <form name="form1" method="post" action="cutstockdb.php">
                 <input type="hidden" name="matid" class="form-control" readonly value="<?php echo $rs['material_id']?>" >
                     <div>
                 <label> ชื่อวัตถุดิบ</label>

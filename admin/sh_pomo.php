@@ -35,7 +35,13 @@ include 'condb.php';
            <tr>
             <!-- <th>รหัสโปรโมชั่น</th> -->
             <th>รูปภาพ</th>
+            <th>ชื่อโปรโมชั่น</th>
+            <th>จำนวนแก้ว</th>
+            <th>ส่วนลด</th>
             <th>รายละเอียดโปรโมชั่น</th>
+            <th>สถานะ</th>
+            <th>จัดการ</th>
+            <th>แก้ไข</th>
             <th>ลบ</th>
            </tr> 
 <?php
@@ -46,7 +52,13 @@ while($row=mysqli_fetch_array($hand)){
            <tr>
             <!-- <td><?=$row['pomo_id']?></td> -->
             <td><image src="../pomo/<?=$row['pomo_img']?>" width="100px" height="150px"></td>
+            <td><?=$row['pomo_name']?></td>
+            <td><?=$row['pomo_number']?></td>
+            <td><?=$row['pomo_sale']?></td>
             <td><?=$row['detail_pomo']?></td>
+            <td><?=$row['pomo_status']?></td>
+            <td><a href="edit_pomo.php?id=<?=$row['pomo_id']?>" class="btn btn-success">ปิดโปรโมชั่น</a></td>
+            <td><a href="edit_pomo.php?id=<?=$row['pomo_id']?>" class="btn btn-success">แก้ไข</a></td>
             <td><a href="pomo_delete.php?id=<?=$row['pomo_id']?>" class="btn btn-danger">ลบ</a></td>
            </tr>
            <?php

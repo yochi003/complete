@@ -37,7 +37,11 @@ include 'condb.php';
                 <form name="form1" method="post" action="insert_pomo.php" enctype="multipart/form-data">
                 <label> รูปภาพ </label>
                 <input type="file" name="file2" class="form-control" required> <br> 
-                <label> รายละเอียดโปโมชั่น</label>
+                <label> ชื่อโปรโมชั่น</label>
+                <input type="text" name="pomoname" class="form-control" required> <br> 
+                <label> ส่วนลด</label>
+                <input type="text" name="pomosale" class="form-control" required> <br> 
+                <label> รายละเอียดโปรโมชั่น</label>
                 <input type="text" name="pomo" class="form-control" required> <br> 
                 <button type="submit" class="btn btn-success">บันทึก</button>
                 <a class="btn btn-danger" href="sh_pomo.php" role="button">ยกเลิก</a>
