@@ -50,6 +50,10 @@
                                     </div>   
                             </div>
                             <div class="sb-sidenav-menu-heading">จัดการข้อมูล</div>
+                            <a class="nav-link" href="sh_employee.php">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-user"></i></div>
+                                ข้อมูลพนักงาน
+                            </a>
                             <a class="nav-link" href="sh_cus.php">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-user"></i></div>
                                 ข้อมูลลูกค้า

@@ -54,9 +54,9 @@ include 'navbar.php';
                                                     if($row['order_status'] == 0){
                                                         echo "<span style='background-color: #ff0000;padding: 5px 10px 5px 10px;text-align: center;color: #fff;'>คำสั่งซื้อถูกยกเลิก</span>";
                                                     }elseif($row['order_status'] == 1){
-                                                        echo "<span style='background-color: #ffc107;padding: 5px 10px 5px 10px;text-align: center;color: #000;'>รอการยืนยังการชำระเงิน</span>";
+                                                        echo "<span style='background-color: #ffc107;padding: 5px 10px 5px 10px;text-align: center;color: #000;'>รอการยืนยันการชำระเงิน</span>";
                                                     }else{
-                                                        echo "<span style='background-color: #4cff00;padding: 5px 10px 5px 10px;text-align: center;color: #000;'>การสั่งซื้อได้รับการยืนยังเเล้ว</span>";
+                                                        echo "<span style='background-color: #4cff00;padding: 5px 10px 5px 10px;text-align: center;color: #000;'>การสั่งซื้อได้รับการยืนยันเเล้ว</span>";
                                                     }
                                                 ?>
                                             </div>
