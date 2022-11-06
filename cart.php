@@ -94,6 +94,17 @@ mysqli_close($conn);
     <td class="text-center"><?=number_format($sumPrice,2)?></td>
     <td>บาท</td>
 </tr>
+<tr>
+    <td>ส่วนลด</td> 
+    <td><input type="text" name="pomo_name" class="form-control" required placeholder="ส่วนลด"> <br>
+    </td>
+    <td><button type="submit_pomo" class="btn btn-outline-success" style="margin-bottom: 20px;">ยืนยัน</button>
+    </td>
+    <?php
+    $ids=$_GET['id'];
+    SELECT * FROM `promotion` WHERE pomo_name ='555';
+    ?>
+</tr>
 </table>
 <p class="text-end">จำนวนสินค้าที่สั่งซื้อ <?= $sumTotal?> แก้ว</p>
 <div style="text-align:right">
