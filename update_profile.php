@@ -1,4 +1,7 @@
 <?php
+// echo '<br>';
+// print_r($_POST);
+// echo '<br>';
 include 'condb.php';
 $cusid= $_POST['cusid'];
 $name = $_POST['name'];

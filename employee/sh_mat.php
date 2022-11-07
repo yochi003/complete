@@ -28,7 +28,7 @@ include 'condb.php';
 <div class="card-header">
     <div class="container">
     <div class="alert alert-primary  h2 text-center mb-4 mt-4" role="alert">
-    แสดงข้อวัตถุดิบ
+    ข้อมูลวัตถุดิบ
             </div>
             <a class="btn btn-primary mb-4" href="fr_mat.php" role="button">เพิ่มข้อมูลวัตถุดิบ+</a> <br>
             <table id="datatablesSimple" class="table table-striped table-hover">

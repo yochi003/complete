@@ -53,8 +53,8 @@ include 'condb.php';
                 </select>
                 <label> ราคา </label>
                 <input type="number" name="price" class="form-control" required> <br>
-                <label> จำนวน </label>
-                <input type="number" name="num" class="form-control"required> <br>
+                <!-- <label> จำนวน </label>
+                <input type="number" name="num" class="form-control"required> <br> -->
                 <label> รูปภาพ </label>
                 <input type="file" name="file1" class="form-control" required> <br> <br>
 

@@ -32,7 +32,7 @@ include 'condb.php';
         <div class="row">
             <div class="col-sm-6">
             <div class="alert alert-primary  h4 text-center mb-4" role="alert">
-                เพิ่มข้อมูลสินค้า
+                เพิ่มข้อมูลโปรโมชั่น
             </div>
                 <form name="form1" method="post" action="insert_pomo.php" enctype="multipart/form-data">
                 <label> รูปภาพ </label>

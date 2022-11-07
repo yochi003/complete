@@ -50,6 +50,7 @@
                                             <th>ราคารวมสุทธิ</th>
                                             <th>วันที่สั่งซื้อ</th>
                                             <th>สถานะการสั่งซื้อ</th>
+                                            <th>รายละเอียด</th>
                                         </tr>
                                     </thead>
 
@@ -87,7 +88,9 @@
                                                 ?>
 
                                             </td>
-                                            
+                                            <td>
+                                            <a href="report_order_detailemp.php?id=<?=$row['orderID']?>" class="btn btn-danger">รายละเอียด</a>
+                                            </td>   
                                         </tr>
                                         </tr>
                                     <?php 

@@ -20,8 +20,8 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="profile_am.php">โปรไฟล์</a></li>
-                        <li><a class="dropdown-item" href="logout_am.php">ออกจากระบบ</a></li>
+                        <li><a class="dropdown-item" href="profile_emp.php">โปรไฟล์</a></li>
+                        <li><a class="dropdown-item" href="logout_emp.php">ออกจากระบบ</a></li>
                     </ul>
                 </li>
             </ul>

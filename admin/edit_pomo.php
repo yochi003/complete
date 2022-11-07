@@ -35,12 +35,12 @@ $rs=mysqli_fetch_array($result);
         <div class="row">
             <div class="col-sm-6">
             <div class="alert alert-primary  h4 text-center mb-4" role="alert">
-                แก้ไขข้อมูลสินค้า
+                แก้ไขข้อมูลโปรโมชั่น
             </div>
 
                 <form name="form1" method="post" action="update_pomo.php" enctype="multipart/form-data">
-                <label> รหัสสินค้า</label>
-                <input type="text" name="pomo_id" class="form-control" readonly value="<?php echo $rs['pomo_id']?>" >
+                <!-- <label> รหัสสินค้า</label>
+                <input type="text" name="pomo_id" class="form-control" readonly value="<?php echo $rs['pomo_id']?>" > -->
                 <label> รูปภาพ </label><br><br>
                  <img src="../pomo/<?php echo $rs['pomo_img']?>"  width="100px" height="150px" ><br><br>
                 <input type="file" name="file1" > <br> <br>

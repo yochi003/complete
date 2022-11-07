@@ -20,9 +20,9 @@ $hand3=mysqli_query($conn,$sql3);
 $row3=mysqli_fetch_array($hand3);
 
 //รายการสั่งซื้อที่เหลือน้อยกว่า 10 ชิ้น
-$sql4="select COUNT(pro_id) AS pro_num from product where amount < 10 ";
-$hand4=mysqli_query($conn,$sql4);
-$row4=mysqli_fetch_array($hand4);
+// $sql4="select COUNT(pro_id) AS pro_num from product where amount < 10 ";
+// $hand4=mysqli_query($conn,$sql4);
+// $row4=mysqli_fetch_array($hand4);
 
 
 
@@ -51,22 +51,13 @@ $row4=mysqli_fetch_array($hand4);
 </head>
 
 <body class="sb-nav-fixed">
-    <!-- <div class="row">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="text-center">Coffee Shop ยินดีต้อนรับ : <?php echo $_SESSION['name'].'  '.$_SESSION['surname']?></h4>
-            </div>
-        </div>
-    </div> -->
     <?php include 'menu1.php';   ?>
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid px-4">
-                <h1 class="mt-4">จัดการภายในร้าน</h1>
-                <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item active">coffee shop</li>
+                <h1 class="mt-3">ยินดีต้อนรับคุณ : <?php echo $_SESSION['name'].'  '.$_SESSION['surname']?></h1>
                 </ol>
-                <div class="row">
+                <div class="row mt-3">
                     <div class="col-xl-3 col-md-6">
                         <div class="card bg-primary text-white mb-4">
                             <div class="card-body">รายการสั่งซื้อสินค้า(ยังไม่ได้ชำระเงิน)<h4><?=$row1['order_no']?></h4></div>
@@ -94,7 +85,7 @@ $row4=mysqli_fetch_array($hand4);
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
+                    <!-- <div class="col-xl-3 col-md-6">
                         <div class="card bg-warning text-white mb-4">
                             <div class="card-body">รายการสินค้าที่เหลือน้อยกว่า 10 ชิ้น <h4><?=$row4['pro_num']?></h4></div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
@@ -102,28 +93,8 @@ $row4=mysqli_fetch_array($hand4);
                                 <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <!-- <div class="row">
-                    <div class="col-xl-6">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-chart-area me-1"></i>
-                                Area Chart Example
-                            </div>
-                            <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-chart-bar me-1"></i>
-                                Bar Chart Example
-                            </div>
-                            <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="card mb-4">
                     <div class="card-header">
                         <i class="fas fa-table me-1"></i>
@@ -134,23 +105,23 @@ $row4=mysqli_fetch_array($hand4);
                             <thead>
                                 <tr>
                                     <th>รูปภาพ</th>
-                                    <th>รหัสสินค้า</th>
+                                    <!-- <th>รหัสสินค้า</th> -->
                                     <th>ชื่อสินค้า</th>
                                     <!-- <th>รายละเอียด</th> -->
                                     <th>ประเภทสินค้า</th>
-                                    <th>ราคา</th>
-                                    <th>จำนวน</th>
-                                    <th>เพิ่มสต็อกสินค้า</th>
+                                    <!-- <th>ราคา</th> -->
+                                    <!-- <th>จำนวน</th>
+                                    <th>เพิ่มสต็อกสินค้า</th> -->
                                 </tr>
                             </thead>
-                            <tfoot>
+                            <!-- <tfoot>
                                 <tr>
                                     <th>pro_id</th>
                                     <th>pro_name</th>
                                     <th>detail</th>
                                     <th>type_name</th>
                                 </tr>
-                            </tfoot>
+                            </tfoot> -->
                             <tbody>
                                 <?php
     $sql="SELECT * FROM product p, type t WHERE p.type_id=t.type_id";
@@ -160,15 +131,13 @@ $row4=mysqli_fetch_array($hand4);
 ?>
                                 <tr>
                                     <td><img src="../admin/image/<?=$row['image']?>" width="100" height="150"></td>
-                                    <td><?=$row['pro_id']?></td>
+                                    <!-- <td><?=$row['pro_id']?></td> -->
                                     <td><?=$row['pro_name']?></td>
                                     <!-- <td><?=$row['detail']?></td> -->
                                     <td><?=$row['type_name']?></td>
-                                    <td><?=$row['price']?></td>
-                                    <td><?=$row['amount']?></td>
-
-                                    <td><a href="addStock.php?id=<?=$row['pro_id']?>" class="btn btn-secondary">เพิ่ม</a></tr>
-
+                                    <!-- <td><?=$row['price']?></td>
+                                    <td><?=$row['amount']?></td> -->
+                                    <!-- <td><a href="addStock.php?id=<?=$row['pro_id']?>" class="btn btn-secondary">เพิ่ม</a></tr> -->
                                 </tr>
                                 <?php
     }
@@ -181,8 +150,6 @@ $row4=mysqli_fetch_array($hand4);
             </div>
         </main>
         <?php include 'footer.php'   ?>
-
-
     </div>
     </div>
 

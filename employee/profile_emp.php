@@ -20,7 +20,7 @@ include 'condb.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แก้ไขข้อมูลลูกค้า</title>
+    <title>แก้ไขข้อมูล</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
@@ -49,34 +49,30 @@ include 'condb.php';
                             </div>
                             <?php
                             include 'condb.php';
-                            if (isset($_SESSION['adminid'])) {
-                                $id = $_SESSION['adminid'];
-                                $sql = "SELECT * FROM admin WHERE admin_id = '$id'";
+                            if (isset($_SESSION['empid'])) {
+                                $id = $_SESSION['empid'];
+                                $sql = "SELECT * FROM emplooyee WHERE emp_id = '$id'";
                                 $result = mysqli_query($conn, $sql);
                                 $am = mysqli_fetch_array($result);
                             }
                             ?>
-                            <form name="form1" method="post" action="adedit_profile.php">
-                                <label> รหัส</label>
-                                <input type="text" name="admin_id" class="form-control" readonly
-                                    value="<?php echo $am['admin_id'] ?>">
-                                <label> ชื่อ</label>
-                                <input type="text" name="ad_name" class="form-control" value="<?php echo $am['ad_name'] ?>">
-                                <label> นามสกุล </label>
-                                <input type="text" name="ad_surname" class="form-control"
-                                    value="<?php echo $am['ad_surname'] ?>"> <br>
-                                <label> ชื่อผู้ใช้ </label>
-                                <input type="text" name="admin_username" class="form-control" readonly
-                                    value="<?php echo $am['admin_username'] ?>"> <br>
-                                <label> รหัสผ่าน </label>
-                                <input type="password" name="admin_password" class="form-control"
-                                    value="<?php echo $am['admin_password'] ?>"> <br>
-                                <label> อีเมล </label>
-                                <input type="text" name="email" class="form-control" value="<?php echo $am['email'] ?>">
-                                <br>
-                                <label> เบอร์โทรศัพท์ </label>
-                                <input type="text" name="phone" class="form-control" value="<?php echo $am['phone'] ?>">
-                                <br>
+                            <form name="form1" method="post" action="empedit_profile.php" enctype="multipart/form-data">
+                <label> รหัสพนักงาน</label>
+                <input type="text" name="empid" class="form-control" readonly value="<?php echo $am['emp_id']?>" ><br>
+                <label> ชื่อ</label>
+                <input type="text" name="name" class="form-control" value="<?php echo $am['emp_name']?>" ><br>
+                <label> นามสกุล </label>
+                <input type="text" name="sname" class="form-control"  value="<?php echo $am['emp_sname']?>" > <br>
+                <label> ชื่อผู้ใช้ </label>
+                <input type="text" name="username" class="form-control" value="<?php echo $am['emp_user']?>" > <br>
+                <label> รหัสผ่าน </label>
+                <input type="password" name="password" class="form-control" value="<?php echo $am['emp_password']?>" > <br>
+                <label> อีเมล </label>
+                <input type="text" name="email" class="form-control" value="<?php echo $am['emp_email']?>" > <br>
+                <label> เบอร์โทรศัพท์ </label>
+                <input type="text" name="phone" class="form-control" value="<?php echo $am['emp_phone']?>" > <br>
+                <label> ที่อยู่ </label>
+                <input type="text" name="address" class="form-control" value="<?php echo $am['emp_address']?>" > <br>
                                 <button type="submit" class="btn btn-warning">แก้ไข</button>
                                 <a class="btn btn-danger" href="index.php" role="button">ยกเลิก</a>
                             </form>

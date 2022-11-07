@@ -17,6 +17,6 @@ if ($row > 0) {
     $_SESSION["surname"] = $row['emp_sname']; 
     header("location:index.php");
 } else {
-    header("location:login_am.php");
+    header("location:login_emp.php");
 }
 ?>

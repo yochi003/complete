@@ -38,8 +38,8 @@ $rs=mysqli_fetch_array($result);
             </div>
 
                 <form name="form1" method="post" action="update_type.php" enctype="multipart/form-data">
-                <label> รหัสประเภทสินค้า</label>
-                <input type="text" name="typeid" class="form-control" readonly value="<?php echo $rs['type_id']?>" >
+                <!-- <label> รหัสประเภทสินค้า</label>
+                <input type="text" name="typeid" class="form-control" readonly value="<?php echo $rs['type_id']?>" > -->
                 <label> ชื่อประเภทสินค้า</label>
                 <input type="text" name="typename" class="form-control" value="<?php echo $rs['type_name']?>" ><br>
                  

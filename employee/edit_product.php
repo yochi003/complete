@@ -39,8 +39,8 @@ $p_typeID=$rs['type_id'];
             </div>
 
                 <form name="form1" method="post" action="update_product.php" enctype="multipart/form-data">
-                <label> รหัสสินค้า</label>
-                <input type="text" name="proid" class="form-control" readonly value="<?php echo $rs['pro_id']?>" >
+                <!-- <label> รหัสสินค้า</label>
+                <input type="text" name="proid" class="form-control" readonly value="<?php echo $rs['pro_id']?>" > -->
                 <label> ชื่อสินค้า</label>
                 <input type="text" name="pname" class="form-control" value="<?php echo $rs['pro_name']?>" >
                 
@@ -61,8 +61,8 @@ $p_typeID=$rs['type_id'];
                 </select>
                 <label> ราคา </label>
                 <input type="number" name="price" class="form-control"  value="<?php echo $rs['price']?>" >
-                <label> จำนวน </label>
-                <input type="number" name="num" class="form-control" value="<?php echo $rs['amount']?>" > <br>
+                <!-- <label> จำนวน </label>
+                <input type="number" name="num" class="form-control" value="<?php echo $rs['amount']?>" > <br> -->
                 <label> รูปภาพ </label><br><br>
                  <img src="image/<?php echo $rs['image']?>"  width="100px" height="150px" ><br><br>
                 <input type="file" name="file1" > <br> <br>
