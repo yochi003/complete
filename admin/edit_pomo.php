@@ -39,19 +39,27 @@ $rs=mysqli_fetch_array($result);
             </div>
 
                 <form name="form1" method="post" action="update_pomo.php" enctype="multipart/form-data">
-                <!-- <label> รหัสสินค้า</label>
-                <input type="text" name="pomo_id" class="form-control" readonly value="<?php echo $rs['pomo_id']?>" > -->
+                <!-- <label> รหัสสินค้า</label> -->
+                <input type="hidden" name="pomo_id" class="form-control" readonly value="<?php echo $rs['pomo_id']?>" >
                 <label> รูปภาพ </label><br><br>
                  <img src="../pomo/<?php echo $rs['pomo_img']?>"  width="100px" height="150px" ><br><br>
                 <input type="file" name="file1" > <br> <br>
                 <input type="hidden" name="txtimg" class="form-control" value="<?php echo $rs['pomo_img']?>" >
+
+                <label>ชื่อโปรโมชั่น</label>
+                <input type="text" name="pomoname" class="form-control" value="<?php echo $rs['pomo_name']?>" >
+                <label>จำนวนเเก้ว</label>
+                <input type="number" name="pomo_number" class="form-control" value="<?php echo $rs['pomo_number']?>" >
+                <label>ส่วนลด</label>
+                <input type="text" name="pomosale" class="form-control" value="<?php echo $rs['pomo_sale']?>" >
                 <label> รายละเอียดโปรโมชั่น</label>
                 <input type="text" name="detailpomo" class="form-control" value="<?php echo $rs['detail_pomo']?>" >
-                <label class="form-check-label" for="flexSwitchCheckChecked">เปิด</label>
-                <div class="form-check form-switch">
+                
+                <!-- <label class="form-check-label" for="flexSwitchCheckChecked">เปิด</label> -->
+                <!-- <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="pomo_open" name="pomo_open" <?php if($rs['pomo_open'] == '1'){ echo "checked"; }?> >
-                </div> 
-
+                </div>  -->
+                <br>
                 <button type="submit" class="btn btn-success">แก้ไข</button>
                 <a class="btn btn-danger" href="sh_pomo.php" role="button">ยกเลิก</a>
                 </form>

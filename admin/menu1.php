@@ -1,5 +1,3 @@
-
-
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3" href="index.php">Coffee Shop</a>
@@ -15,16 +13,16 @@
             </form>
             
             <!-- Navbar-->
-            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <!-- <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="profile_am.php">โปรไฟล์</a></li>
-                        <li><a class="dropdown-item" href="logout_am.php">ออกจากระบบ</a></li>
+                        <!-- <li><a class="dropdown-item" href="profile_am.php">โปรไฟล์</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="logout_am.php">ออกจากระบบ</a></li> -->
                     </ul>
                 </li>
-            </ul>
+            </ul> -->
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
@@ -83,6 +81,10 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 รายงานการขาย
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <a class="nav-link" href="logout_am.php">
+                                <div class="sb-nav-link-icon"><i class="fa-brands fa-cc-visa"></i></div>
+                                ออกจากระบบ
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">

@@ -28,8 +28,8 @@ include 'condb.php';
 <div class="card mb-4 mt-4">
 <div class="card-header">
     <div class="container">
-            <div class="alert alert-primary  h4 text-center mb-4" role="alert">
-                เพิ่มข้อมูลพนักงาน
+    <div class="h2 mb-4 mt-4">
+    <b> เพิ่มข้อมูลพนักงาน </b>
             </div>
                 <form name="form1" method="post" action="insert_emp.php" enctype="multipart/form-data">
                 <label> ชื่อ</label>

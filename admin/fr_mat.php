@@ -31,8 +31,8 @@ include 'condb.php';
     
         <div class="row">
             <div class="col-sm-6">
-            <div class="alert alert-primary  h4 text-center mb-4" role="alert">
-                เพิ่มข้อมูลวัตถุดิบ
+            <div class="h2 mb-4 mt-4">
+    <b> เพิ่มข้อมูลวัตถุดิบ </b>
             </div>
                 <form name="form1" method="post" action="insert_mat.php" enctype="multipart/form-data">
                     <div>

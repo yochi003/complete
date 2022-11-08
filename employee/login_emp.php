@@ -25,7 +25,7 @@
 
     <div class="login">
 
-        <h1 class="text-center">Loginemp</h1>
+        <h1 class="text-center">Login พนักงาน</h1>
 
         <form class="needs-validation" action="login_empcheck.php" method="POST">
             <div class="form-group was-validated">

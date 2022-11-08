@@ -14,16 +14,16 @@ $address = $_POST['address'];
     emp_name = '$name',
     emp_sname = '$sname',
     emp_user	 = '$username',
-    emp_password = ' $password',
-    emp_email = ' $email',
-    emp_phone = ' $phone',
-    emp_address = ' $address'
+    emp_password = '$password',
+    emp_email = '$email',
+    emp_phone = '$phone',
+    emp_address = '$address'
     WHERE emp_id='$empid' ";
 
 $result=mysqli_query($conn,$sql);
 if($result){
     echo "<script> alert('แก้ไขข้อมูลเรียบร้อย');</script>";
-    echo "<script> window.location='sh_emp.php';</script>";
+    echo "<script> window.location='sh_employee.php';</script>";
 }else{
     echo "<script> alert('ไม่สามารถแก้ไขข้อมูลได้'); </script>";
 }

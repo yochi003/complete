@@ -4,7 +4,6 @@ $proid= $_POST['proid'];
 $proname = $_POST['pname'];
 $typeid = $_POST['typeID'];
 $price = $_POST['price'];
-$num = $_POST['num'];
 $image = $_POST['txtimg'];
 //  $product_best = $_POST['product_best'];
 // $status = 0;
@@ -23,7 +22,6 @@ if (is_uploaded_file($_FILES['file1']['tmp_name'])) {
     pro_name ='$proname', 
     type_id = '$typeid',
     price = '$price',
-    amount = '$num',
     image = '$new_image_name'
    
     WHERE pro_id='$proid' ";

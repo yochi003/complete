@@ -37,9 +37,9 @@ $rs=mysqli_fetch_array($result);
     <b> แก้ไขประเภทสินค้า </b>
             </div>
 
-                <form name="form1" method="post" action="update_type.php" enctype="multipart/form-data">
-                <!-- <label> รหัสประเภทสินค้า</label>
-                <input type="text" name="typeid" class="form-control" readonly value="<?php echo $rs['type_id']?>" > -->
+                <form name="form1" method="post" action="update_type.php">
+                <!-- <label> รหัสประเภทสินค้า</label> -->
+                <input type="hidden" name="typeid" class="form-control" readonly value="<?php echo $rs['type_id']?>" >
                 <label> ชื่อประเภทสินค้า</label>
                 <input type="text" name="typename" class="form-control" value="<?php echo $rs['type_name']?>" ><br>
                  

@@ -18,7 +18,7 @@ if (is_uploaded_file($_FILES['file1']['tmp_name'])) {
     $result=mysqli_query($conn,$sql);
     if($result){
         echo "<script> alert('บันทึกข้อมูลเรียบร้อย');</script>";
-        echo "<script> window.location='fr_product.php';</script>";
+        echo "<script> window.location='sh_product.php';</script>";
     }else{
         echo "<script> alert('ไม่สามารถบันทึกข้อมูลได้'); </script>";
     }

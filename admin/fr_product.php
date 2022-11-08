@@ -31,8 +31,8 @@ include 'condb.php';
     
         <div class="row">
             <div class="col-sm-6">
-            <div class="alert alert-primary  h4 text-center mb-4" role="alert">
-                เพิ่มข้อมูลสินค้า
+            <div class="h2 mb-4 mt-4">
+    <b> เพิ่มข้อมูลสินค้า </b>
             </div>
                 <form name="form1" method="post" action="insert_product.php" enctype="multipart/form-data">
                 <label> ชื่อสินค้า</label>
@@ -53,8 +53,8 @@ include 'condb.php';
                 </select>
                 <label> ราคา </label>
                 <input type="number" name="price" class="form-control" required> <br>
-                <!-- <label> จำนวน </label>
-                <input type="number" name="num" class="form-control"required> <br> -->
+                <label> จำนวน </label>
+                <input type="number" name="num" class="form-control" required> <br>
                 <label> รูปภาพ </label>
                 <input type="file" name="file1" class="form-control" required> <br> <br>
 

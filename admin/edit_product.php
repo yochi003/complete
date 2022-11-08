@@ -39,8 +39,8 @@ $p_typeID=$rs['type_id'];
             </div>
 
                 <form name="form1" method="post" action="update_product.php" enctype="multipart/form-data">
-                <!-- <label> รหัสสินค้า</label>
-                <input type="text" name="proid" class="form-control" readonly value="<?php echo $rs['pro_id']?>" > -->
+                <!-- <label> รหัสสินค้า</label> -->
+                <input type="hidden" name="proid" class="form-control" readonly value="<?php echo $rs['pro_id']?>" >
                 <label> ชื่อสินค้า</label>
                 <input type="text" name="pname" class="form-control" value="<?php echo $rs['pro_name']?>" >
                 

@@ -86,7 +86,7 @@ $row = mysqli_fetch_array($result);
                             <b>ราคารวมสุทธิ(*หักตามโปรโมชั่น) <?= number_format($sum_total, 2) ?> บาท</b><br><br>
                             </td>    
                         </div>
-                        <a href="pay_order.php?id=<?= $ids ?>" class = "btn btn-outline-info" onclick="del1(this.href); return false;">ยืนยังคำสั่งซื้อ</a>
+                        <a href="pay_order.php?id=<?= $ids ?>" class = "btn btn-outline-info" onclick="del1(this.href); return false;">ยืนยันคำสั่งซื้อ</a>
                         <a href="cancel_order.php?id=<?= $ids ?>" class = "btn btn-outline-danger" onclick="del(this.href); return false;">ยกเลิกคำสั่งซื้อ</a>
                     </div>
                 </div>

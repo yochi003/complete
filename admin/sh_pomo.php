@@ -27,8 +27,8 @@ include 'condb.php';
                         <div class="card mb-4 mt-4">
                             <div class="card-header">
     <div class="container">
-    <div class="alert alert-primary  h2 text-center mb-4 mt-4" role="alert">
-                ข้อมูลโปรโมชั่น
+    <div class="h2 mb-4 mt-4">
+    <b> ข้อมูลโปรโมชั่น </b>
             </div>
             <a class="btn btn-primary mb-4" href="fr_pomo.php" role="button">เพิ่มโปรโมชั่น+</a> <br>
             <table id="datatablesSimple" class="table table-striped table-hover">
@@ -36,7 +36,7 @@ include 'condb.php';
             <!-- <th>รหัสโปรโมชั่น</th> -->
             <th>รูปภาพ</th>
             <th>รหัสโปรโมชั่น</th>
-            <th>จำนวนขั่นต่าการสั่งซื้อ/เเก้ว</th>
+            <th>จำนวนขั้นต่ำการสั่งซื้อ/เเก้ว</th>
             <th>ส่วนลด</th>
             <th>รายละเอียดโปรโมชั่น</th>
             <th>สถานะ</th>

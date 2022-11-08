@@ -7,7 +7,7 @@ $material_name = $_POST['matname'];
     $result=mysqli_query($conn,$sql);
     if($result){
         echo "<script> alert('บันทึกข้อมูลเรียบร้อย');</script>";
-        echo "<script> window.location='fr_mat.php';</script>";
+        echo "<script> window.location='sh_mat.php';</script>";
     }else{
         echo "<script> alert('ไม่สามารถบันทึกข้อมูลได้'); </script>";
     }

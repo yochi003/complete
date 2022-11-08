@@ -19,10 +19,10 @@ $sql3="select COUNT(orderID) AS order_cancel from tb_order where order_status='0
 $hand3=mysqli_query($conn,$sql3);
 $row3=mysqli_fetch_array($hand3);
 
-//รายการสั่งซื้อที่เหลือน้อยกว่า 10 ชิ้น
-$sql4="select COUNT(pro_id) AS pro_num from product where amount < 10 ";
-$hand4=mysqli_query($conn,$sql4);
-$row4=mysqli_fetch_array($hand4);
+// //รายการสั่งซื้อที่เหลือน้อยกว่า 10 ชิ้น
+// $sql4="select COUNT(pro_id) AS pro_num from product where amount < 10 ";
+// $hand4=mysqli_query($conn,$sql4);
+// $row4=mysqli_fetch_array($hand4);
 
 
 
@@ -94,7 +94,7 @@ $row4=mysqli_fetch_array($hand4);
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
+                    <!-- <div class="col-xl-3 col-md-6">
                         <div class="card bg-warning text-white mb-4">
                             <div class="card-body">รายการสินค้าที่เหลือน้อยกว่า 10 ชิ้น <h4><?=$row4['pro_num']?></h4></div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
@@ -103,7 +103,7 @@ $row4=mysqli_fetch_array($hand4);
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="row">
                     <div class="col-xl-6">
                         <div class="card mb-4">
