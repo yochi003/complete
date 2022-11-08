@@ -36,7 +36,7 @@ $rs=mysqli_fetch_array($result);
         <div class="row">
             <div class="col-sm-6">
             <div class="alert alert-primary  h4 text-center mb-4" role="alert">
-                เพิ่มข้อมูลวัตถุดิบ
+                เพิ่มสต็อกวัตถุดิบ
             </div>
                 <form name="form1" method="post" action="upstockdb.php">
                 <input type="hidden" name="matid" class="form-control" readonly value="<?php echo $rs['material_id']?>" >

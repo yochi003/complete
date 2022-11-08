@@ -37,7 +37,7 @@ include 'condb.php';
                 <form name="form1" method="post" action="insert_pomo.php" enctype="multipart/form-data">
                 <label> รูปภาพ </label>
                 <input type="file" name="file2" class="form-control" required> <br> 
-                <label> ชื่อโปรโมชั่น</label>
+                <label> รหัสโปรโมชั่น</label>
                 <input type="text" name="pomoname" class="form-control" required> <br>
                 <label> จำนวนเเก้ว</label>
                 <input type="number" name="pomo_number" class="form-control" required> <br>  

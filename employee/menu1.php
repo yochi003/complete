@@ -68,7 +68,7 @@
                             </a>
                             <a class="nav-link" href="report_order.php">
                                 <div class="sb-nav-link-icon"><i class="fa-brands fa-cc-visa"></i></div>
-                                เรียกดูการชำระเงิน
+                                ออเดอร์
                             </a>
                             <div class="sb-sidenav-menu-heading">รายงาน</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
