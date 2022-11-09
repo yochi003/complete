@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION['admin_username'])){
+    header('location:login_am.php');
+}
 include 'condb.php';
 ?>
 <!DOCTYPE html>
@@ -35,7 +39,7 @@ include 'condb.php';
            <tr>
             <!-- <th>รหัสวัตถุดิบ</th> -->
             <th>ชื่อวัตถุดิบ</th>
-            <th>จำนวนวัตถุดิบ</th>
+            <th>จำนวนวัตถุดิบ/ถุง</th>
             <th>แก้ไข</th>
             <th>ลบ</th>
             <th>เพิ่มสต็อก</th>

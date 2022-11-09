@@ -2,7 +2,7 @@
     include 'condb.php';
     session_start();
     if(!isset($_SESSION['userid'])){
-        header("location:logout.php");
+        header("location:login.php");
     }
 ?>
 <!DOCTYPE html>
@@ -47,7 +47,10 @@
     </div>
     <div class="carousel-item">
     <img class="img-fluid" src="./image/pomo4.jpg"  />
-</div>
+    </div>
+    <div class="carousel-item">
+    <img class="img-fluid" src="./image/pomo5.jpg"  />
+    </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

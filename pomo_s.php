@@ -1,6 +1,9 @@
 <?php
 session_start();
 include 'condb.php';
+if(!isset($_SESSION['ctm_user'])){
+    header('location:login.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,11 +35,21 @@ include 'condb.php';
             ORDER BY pomo_id";
         $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_array($result)) {
+            $pomo_status = $row['pomo_status'];
         ?>
             <div class="col-sm-3">
                 <div class="text-center">
                     <img src="./pomo/<?= $row['pomo_img'] ?>" width="300px" height="450" class="mt-5 p-2 my-2 border">
+                    โค้ดโปรโมชั่น : <h3 class="text-success"><?=$row['pomo_name']?></h3><br>
                     รายละเอียดโปรโมชั่น : <?=$row['detail_pomo']?> <br>
+                    สถานะ :                 
+                    <?php
+                        if($pomo_status == 1){
+                            echo "<b style = 'color:green'>ใช้งานได้</b>";
+                        }else if($pomo_status == 2){
+                            echo "<b style = 'color:red'>หมดอายุ</b>";
+                        }
+                    ?>
                     <br>
                 </div>
                 <br>

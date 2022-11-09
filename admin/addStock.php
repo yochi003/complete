@@ -1,5 +1,9 @@
 <?php
 include 'condb.php';
+session_start();
+if(!isset($_SESSION['admin_username'])){
+    header('location:login_am.php');
+}
 $ids=$_GET['id'];
 $sql="SELECT * FROM product WHERE pro_id='$ids' ";
 $hand=mysqli_query($conn,$sql);

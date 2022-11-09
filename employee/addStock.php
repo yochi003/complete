@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION['emp_user'])){
+    header('location:login_emp.php');
+}
 include 'condb.php';
 $ids=$_GET['id'];
 $sql="SELECT * FROM product WHERE pro_id='$ids' ";

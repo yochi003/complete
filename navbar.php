@@ -9,7 +9,7 @@
                         <li class="nav-item"><a class="nav-link" href="history_order.php">ประวัติการสั่งซื้อ</a></li>
                         <li class="nav-item"><a class="nav-link" href="cart.php">ตะกร้าสินค้า</a></li>
                         <li class="nav-item"><a class="nav-link" href="pomo_s.php">โปรโมชั่น</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><?php echo $_SESSION['ctm_name'].'  '.$_SESSION['ctm_sname']?></li>
+                        <li class="nav-item"><a class="nav-link" href="#">สวัสดีคุณ <?php echo $_SESSION['ctm_name'].'  '.$_SESSION['ctm_sname']?></li>
                     </ul>
                     <form class="d-flex">
                     <a class="btn btn-outline-dark" href="logout.php">ออกจากระบบ</a>

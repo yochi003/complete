@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION['emp_user'])){
+    header('location:login_emp.php');
+}
 include 'condb.php';
 $idpro = (isset($_GET['id'])) ? $_GET['id'] : '';
 $sql = "SELECT * FROM promotion WHERE pomo_id='$idpro' ";
@@ -46,7 +50,7 @@ $rs=mysqli_fetch_array($result);
                 <input type="file" name="file1" > <br> <br>
                 <input type="hidden" name="txtimg" class="form-control" value="<?php echo $rs['pomo_img']?>" >
 
-                <label>ชื่อโปรโมชั่น</label>
+                <label>โค้ดโปรโมชั่น</label>
                 <input type="text" name="pomoname" class="form-control" value="<?php echo $rs['pomo_name']?>" >
                 <label>จำนวนเเก้ว</label>
                 <input type="number" name="pomo_number" class="form-control" value="<?php echo $rs['pomo_number']?>" >

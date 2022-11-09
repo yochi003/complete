@@ -28,7 +28,10 @@ ob_start();  //ฟังก์ชัน ob_start()
 ?>
 <?php
 include 'condb.php';
-
+session_start();
+if(!isset($_SESSION['admin_username'])){
+    header('location:login_am.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION['emp_user'])){
+    header('location:login_emp.php');
+}
 include 'condb.php';
 $matid = (isset($_GET['id'])) ? $_GET['id'] : '';
 $sql = "SELECT * FROM staple WHERE material_id='$matid' ";

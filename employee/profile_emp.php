@@ -1,5 +1,8 @@
 <?php
 session_start();
+if(!isset($_SESSION['emp_user'])){
+    header('location:login_emp.php');
+}
 include 'condb.php';
 
 // if(isset($_SESSION['userid'])){

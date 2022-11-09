@@ -1,4 +1,8 @@
 <?php 
+if(!isset($_SESSION['ctm_user'])){
+    header('location:login.php');
+}
+session_start();
 include 'condb.php';
 ?>
 <!DOCTYPE html>

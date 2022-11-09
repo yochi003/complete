@@ -1,4 +1,9 @@
-<?php include 'condb.php';
+<?php
+session_start();
+if(!isset($_SESSION['admin_username'])){
+    header('location:login_am.php');
+}
+include 'condb.php';
 $ids = $_GET['id'];
 
 $sql = "SELECT * FROM `tb_order` WHERE `orderID` = $ids";
@@ -34,7 +39,7 @@ $row = mysqli_fetch_array($result);
                 <div class="card mb-4 mt-4">
                     <div class="card-header">
                         <i class="fas fa-table me-1"></i>
-                        แสดงรายการสินค้า
+                        แสดงรายการสั่งซื้อ
                         <div>
                             <br>
                             <a href="report_order.php"> <button type="button"
@@ -85,7 +90,7 @@ $row = mysqli_fetch_array($result);
                             <b>ราคารวมสุทธิ <?= number_format($sum_total, 2) ?> บาท</b><br><br>
                             </td>    
                         </div>
-                        <a href="pay_order.php?id=<?= $ids ?>" class = "btn btn-outline-info" onclick="del1(this.href); return false;">ยืนยังคำสั่งซื้อ</a>
+                        <a href="pay_order.php?id=<?= $ids ?>" class = "btn btn-outline-info" onclick="del1(this.href); return false;">ยืนยันคำสั่งซื้อ</a>
                         <a href="cancel_order.php?id=<?= $ids ?>" class = "btn btn-outline-danger" onclick="del(this.href); return false;">ยกเลิกคำสั่งซื้อ</a>
                     </div>
                 </div>

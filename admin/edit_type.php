@@ -1,5 +1,9 @@
 <?php
 include 'condb.php';
+session_start();
+if(!isset($_SESSION['admin_username'])){
+    header('location:login_am.php');
+}
 $typeid = (isset($_GET['id'])) ? $_GET['id'] : '';
 $sql = "SELECT * FROM type WHERE type_id='$typeid' ";
 $result= mysqli_query($conn,$sql);

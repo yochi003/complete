@@ -1,4 +1,7 @@
-<?php 
+<?php
+if(!isset($_SESSION['ctm_user'])){
+  header('location:login.php');
+}
 session_start();
 include 'condb.php';
 $sql ="SELECT * FROM tb_order WHERE orderID = '" . $_SESSION["order_id"] . "'";

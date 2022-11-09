@@ -1,4 +1,9 @@
-<?php include 'condb.php';
+<?php 
+session_start();
+if(!isset($_SESSION['admin_username'])){
+    header('location:login_am.php');
+}
+include 'condb.php';
 $ids = $_GET['id'];
 
 $sql = "SELECT * FROM `tb_order` WHERE `orderID` = $ids";

@@ -1,5 +1,9 @@
 <?php
 include 'condb.php';
+session_start();
+if(!isset($_SESSION['emp_user'])){
+    header('location:login_emp.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -28,7 +28,10 @@ ob_start();  //ฟังก์ชัน ob_start()
 ?>
 <?php
 include 'condb.php';
-
+session_start();
+if(!isset($_SESSION['admin_username'])){
+    header('location:login_am.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,27 +61,23 @@ include 'condb.php';
                             <div class="card-header">
     <div class="container">
         <br>
-        <h4 class="text-center"><b>แสดงข้อมูลสินค้าคงเหลือ</b></h4>
+        <h4 class="text-center"><b>แสดงข้อมูลวัตถุดิบคงเหลือ</b></h4>
         <br>
         <table class="table">
     <tr>
-        <th>รหัสสินค้า</th>
-        <th>ชื่อสินค้า</th>
-        <th>จำนวน</th>
-        <th class="text-end">ราคา</th>
+        <th>ชื่อวัตถุดิบ</th>
+        <th class="text-end">จำนวนวัตถุดิบ</th>
     </tr>
     <?php
     $total=0;
-    $sql="select * from product order by pro_id";
+    $sql="select * from staple order by material_id";
     $result = mysqli_query($conn,$sql);
     while($row=mysqli_fetch_array($result)){
-    $total=$total + $row['price'];  
+    // $total=$total + $row['price'];  
     ?>
     <tr>
-        <td><?=$row['pro_id']?></td>
-        <td><?=$row['pro_name']?></td>
-        <td><?=$row['amount']?></td>
-        <td class="text-end"><?=$row['price']?></td>
+        <td><?=$row['material_name']?></td>
+        <td class="text-end"><?=$row['material_number']?></td>
         
         
     </tr>

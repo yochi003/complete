@@ -1,7 +1,9 @@
 <?php
 session_start();
 include 'condb.php';
-
+if(!isset($_SESSION['ctm_user'])){
+    header('location:login.php');
+}
 // if(isset($_SESSION['userid'])){
 //     $cusid = $_SESSION['userid'];
 //     $sql = "SELECT * FROM customer WHERE customer_id = '$cusid'";

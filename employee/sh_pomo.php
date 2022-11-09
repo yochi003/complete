@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION['emp_user'])){
+    header('location:login_emp.php');
+}
 include 'condb.php';
 ?>
 <!DOCTYPE html>
@@ -35,10 +39,10 @@ include 'condb.php';
            <tr>
             <!-- <th>รหัสโปรโมชั่น</th> -->
             <th>รูปภาพ</th>
-            <th>รหัสโปรโมชั่น</th>
+            <th>โค้ดโปรโมชั่น</th>
             <th>จำนวนขั้นต่ำการสั่งซื้อ/เเก้ว</th>
-            <th>ส่วนลด</th>
-            <th>รายละเอียดโปรโมชั่น</th>
+            <th>ส่วนลด/บาท</th>
+            <th width = "20%">รายละเอียดโปรโมชั่น</th>
             <th>สถานะ</th>
             <th>จัดการ</th>
             <th>แก้ไข</th>
@@ -48,6 +52,7 @@ include 'condb.php';
 $sql="SELECT * FROM promotion WHERE pomo_id = pomo_id ";
 $hand = mysqli_query($conn,$sql);
 while($row=mysqli_fetch_array($hand)){
+    $pomo_status = $row['pomo_status'];
 ?>
            <tr>
             <!-- <td><?=$row['pomo_id']?></td> -->
@@ -56,8 +61,21 @@ while($row=mysqli_fetch_array($hand)){
             <td><?=$row['pomo_number']?></td>
             <td><?=$row['pomo_sale']?></td>
             <td><?=$row['detail_pomo']?></td>
-            <td><?=$row['pomo_status']?></td>
-            <td><a href="edit_pomo.php?id=<?=$row['pomo_id']?>" class="btn btn-success">ปิดโปรโมชั่น</a></td>
+            <td>
+                <?php
+                if($pomo_status == 1){
+                    echo "<b style = 'color:green'>เปิดใช้งาน</b>";
+                }else if($pomo_status == 2){
+                    echo "<b style = 'color:red'>ปิดใช้งาน</b>";
+                }
+                ?>
+            </td>
+            <div>
+            <td>
+            <a href="open_pomo.php?id=<?=$row['pomo_id']?>" class="btn btn-success">เปิดโปรโมชั่น</a>
+            <a href="close_pomo.php?id=<?=$row['pomo_id']?>" class="btn btn-danger">ปิดโปรโมชั่น</a>
+            </td>
+            </div>
             <td><a href="edit_pomo.php?id=<?=$row['pomo_id']?>" class="btn btn-success">แก้ไข</a></td>
             <td><a href="pomo_delete.php?id=<?=$row['pomo_id']?>" class="btn btn-danger">ลบ</a></td>
            </tr>

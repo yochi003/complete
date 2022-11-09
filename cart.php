@@ -1,8 +1,10 @@
 <?php
 use Mpdf\Tag\Table;
-
 session_start();
 include 'condb.php';
+if(!isset($_SESSION['ctm_user'])){
+    header('location:login.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -120,12 +122,12 @@ include 'navbar.php'
                             include 'condb.php';
                             $promo = $_GET['promotion_name'];
 
-                            $sth = $conn->prepare("SELECT pomo_number , pomo_sale  FROM promotion WHERE pomo_name = '$promo'");
+                            $sth = $conn->prepare("SELECT pomo_number , pomo_sale  FROM promotion WHERE pomo_name = '$promo' AND pomo_status = '1'");
                             $sth->execute();
                             $sth->store_result();
                             $sth->bind_result($pomo_number, $pomo_sale);
                             $sth->fetch();
-                            if ($sumTotal > $pomo_number) {
+                            if ($sumTotal >= $pomo_number) {
                                 $_SESSION["sum_price"] = $_SESSION["sum_price"] - $pomo_sale;
                         ?>
                         <td class="text-center">ส่วนลด <?=($pomo_sale) ?>

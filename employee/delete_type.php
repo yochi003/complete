@@ -11,6 +11,7 @@ if(mysqli_query($conn,$sql)){
     echo "<script> window.location='sh_type.php';</script>";
 }else{
     echo "<script> alert('ลบข้อมูลไม่สำเร็จ'); </script>";
+    echo "<script> window.location='sh_type.php';</script>";
 }
 
 ?>

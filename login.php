@@ -1,9 +1,3 @@
-<?php 
-    session_start();
-    if(isset($_SESSION['userid'])){
-        header("location:show_product.php");
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,7 +47,7 @@
                     กรุณากรอกรหัสผ่าน
                 </div>
             </div>
-            <div class="form-group">
+        <div class="form-group">
                 <input type="checkbox" onclick="passShow()">
                 <label>แสดงรหัสผ่าน</label>
             </div>

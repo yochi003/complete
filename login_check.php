@@ -5,11 +5,9 @@ session_start();
 $ctm_user = $_POST['ctm_user'];
 $ctm_password = $_POST['ctm_password'];
 
-
-$sql = "SELECT * FROM customer where ctm_user='$ctm_user' and ctm_password='$ctm_password'";
+$sql = "SELECT * FROM customer where ctm_user='$ctm_user' and ctm_password='$ctm_password' ";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result);
-
 
 if ($row > 0) {
     $_SESSION["ctm_user"] = $row['ctm_user'];

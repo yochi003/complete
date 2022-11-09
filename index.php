@@ -20,11 +20,11 @@
 <body>
     <div class="container">
         <div class="row text-center content">
-            <h1>Menagement System of Khawna Phasoob</h1>
+            <h1>Coffee</h1>
             <h3>ระบบจัดการร้านกาแฟ</h3>
             <div>
-                <a href="login_am.php" class="btn btn-primary">เจ้าของร้าน</a>
-                <a href="login_emp.php" class="btn btn-success">พนักงาน</a>
+                <a href="admin/login_am.php" class="btn btn-primary">เจ้าของร้าน</a>
+                <a href="employee/login_emp.php" class="btn btn-success">พนักงาน</a>
             </div>
         </div>
     </div>

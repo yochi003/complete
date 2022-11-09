@@ -54,13 +54,9 @@
                 </div>
                 <div class="form-group was-validated">
                     <label class="form-label text-success">ยืนยันรหัสผ่าน</label>
-                    <input class="form-control" type="password" name="ctm_password2" id="myPassword" required>
+                    <input class="form-control" type="password" name="confirmctm_password" id="myPassword" required>
                     <div class="invalid-feedback">
                     </div>
-                <!-- <div class="form-group">
-                <input type="checkbox" onclick="passShow()">
-                <label>แสดงรหัสผ่าน</label>
-                </div> -->
             </div>
             <div class="form-group was-validated">
                 <label class="form-label text-success">อีเมล</label>
@@ -83,11 +79,8 @@
                         <a href="login.php" class="btn btn-primary w-100">เข้าสู่ระบบ</a>
                     </div>
         </form>
-
     </div>
-
     <script src="js/sheet.js"></script>
-
 </body>
 
 </html>

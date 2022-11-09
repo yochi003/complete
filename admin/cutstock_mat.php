@@ -1,5 +1,9 @@
 <?php
 include 'condb.php';
+session_start();
+if(!isset($_SESSION['admin_username'])){
+    header('location:login_am.php');
+}
 $matid = (isset($_GET['id'])) ? $_GET['id'] : '';
 $sql = "SELECT * FROM staple WHERE material_id='$matid' ";
 $result= mysqli_query($conn,$sql);
@@ -11,7 +15,7 @@ $rs=mysqli_fetch_array($result);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เพิ่มวัตถุดิบ</title>
+    <title>ตัดสต็อกวัตถุดิบ</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');

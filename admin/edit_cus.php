@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION['admin_username'])){
+    header('location:login_am.php');
+}
 include 'condb.php';
 $cusid = (isset($_GET['id'])) ? $_GET['id'] : '';
 $sql = "SELECT * FROM customer WHERE customer_id='$cusid' ";
