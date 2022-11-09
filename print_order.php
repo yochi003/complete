@@ -18,6 +18,7 @@ $total_price = $rs['total_price'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>รายการสั่งซื้อ</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <?php

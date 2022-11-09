@@ -31,7 +31,7 @@
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading"></div>
                             <a class="nav-link" href="index.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-house"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-house"></i></div>
                                 หน้าเเรก
                             </a> 
                             </a>
@@ -49,42 +49,38 @@
                             </div>
                             <div class="sb-sidenav-menu-heading">จัดการข้อมูล</div>
                             <a class="nav-link" href="sh_employee.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-user"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-user-tie"></i></div>
                                 ข้อมูลพนักงาน
                             </a>
                             <a class="nav-link" href="sh_cus.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-user"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-user"></i></div>
                                 ข้อมูลลูกค้า
                             </a>
                             <a class="nav-link" href="sh_product.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-mug-hot"></i></div>
                                 ข้อมูลสินค้า 
                             </a>
                             <a class="nav-link" href="sh_type.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-mug-hot"></i></div>
                                 ข้อมูลประเภทสินค้า 
                             </a>
                             <a class="nav-link" href="sh_mat.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-cart-shopping"></i></div>
                                 ข้อมูลวัตถุดิบ
                             </a>
                             <a class="nav-link" href="sh_pomo.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-wallet"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-wallet"></i></div>
                                 ข้อมูลโปรโมชั่น
                             </a>
                             <a class="nav-link" href="report_order.php">
-                                <div class="sb-nav-link-icon"><i class="fa-brands fa-cc-visa"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-cart-arrow-down"></i></div>
                                 ออเดอร์
                             </a>
                             <div class="sb-sidenav-menu-heading">รายงาน</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fas fa-columns"></i></div>
                                 รายงานการขาย
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <a class="nav-link" href="logout_am.php">
-                                <div class="sb-nav-link-icon"><i class="fa-brands fa-cc-visa"></i></div>
-                                ออกจากระบบ
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
@@ -93,6 +89,10 @@
                                     <a class="nav-link" href="show-product3.php">รายงานการขายทั้งหมด</a>
                                 </nav>
                             </div>
+                            <a class="nav-link" href="logout_am.php">
+                                <div class="sb-nav-link-icon text-danger"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+                                ออกจากระบบ
+                            </a>
                         </div>
                     </div>
                     

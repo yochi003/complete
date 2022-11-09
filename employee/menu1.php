@@ -20,8 +20,8 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="profile_emp.php">โปรไฟล์</a></li>
-                        <li><a class="dropdown-item" href="logout_emp.php">ออกจากระบบ</a></li>
+                        <li><a class="dropdown-item text-warning" href="profile_emp.php"><i class="fa-solid fa-user-pen"></i> โปรไฟล์</a></li>
+                        <li><a class="dropdown-item text-danger" href="logout_emp.php"><i class="fa-solid fa-arrow-right-from-bracket"></i> ออกจากระบบ</a></li>
                     </ul>
                 </li>
             </ul>
@@ -33,7 +33,7 @@
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading"></div>
                             <a class="nav-link" href="index.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-house"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-house"></i></div>
                                 หน้าเเรก
                             </a> 
                             </a>
@@ -51,28 +51,28 @@
                             </div>
                             <div class="sb-sidenav-menu-heading">จัดการข้อมูล</div>
                             <a class="nav-link" href="sh_product.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-mug-hot"></i></div>
                                 ข้อมูลสินค้า 
                             </a>
                             <a class="nav-link" href="sh_type.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-mug-hot"></i></div>
                                 ข้อมูลประเภทสินค้า 
                             </a>
                             <a class="nav-link" href="sh_mat.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-cart-shopping"></i></div>
                                 ข้อมูลวัตถุดิบ
                             </a>
                             <a class="nav-link" href="sh_pomo.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-wallet"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-wallet"></i></div>
                                 ข้อมูลโปรโมชั่น
                             </a>
                             <a class="nav-link" href="report_order.php">
-                                <div class="sb-nav-link-icon"><i class="fa-brands fa-cc-visa"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fa-solid fa-cart-arrow-down"></i></div>
                                 ออเดอร์
                             </a>
                             <div class="sb-sidenav-menu-heading">รายงาน</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon text-white"><i class="fas fa-columns"></i></div>
                                 รายงานการขาย
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
