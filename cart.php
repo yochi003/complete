@@ -2,9 +2,9 @@
 use Mpdf\Tag\Table;
 session_start();
 include 'condb.php';
-if(!isset($_SESSION['ctm_user'])){
-    header('location:login.php');
-}
+// if(!isset($_SESSION['ctm_user'])){
+//     header('location:login.php');
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -103,6 +103,10 @@ include 'navbar.php'
                         }
                     }
                     mysqli_close($conn);
+                    if($sumTotal == 0) {
+                        echo "<script> alert('กรุณาเลือกสินค้า'); </script>";
+                        echo "<script> window.location='show_product.php' </script>";
+                    }
                     ?>
                     <tr>
                         <td class="text-end" colspan="4">รวมเป็นเงิน</td>

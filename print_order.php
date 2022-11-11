@@ -1,7 +1,4 @@
 <?php
-if(!isset($_SESSION['ctm_user'])){
-  header('location:login.php');
-}
 session_start();
 include 'condb.php';
 $sql ="SELECT * FROM tb_order WHERE orderID = '" . $_SESSION["order_id"] . "'";
@@ -77,7 +74,7 @@ while($row=mysqli_fetch_array($result1)){
 ?>
 </table>
 
-<h6 class = "text-end">รวมเป็นเงิน <?=number_format($total_price,2)?> บาท</h6>
+<h6 class = "text-end">รวมทั้งหมด(*หักตามโปรโมชั่น) <?=number_format($total_price,2)?> บาท</h6>
     </div>
   </div>  
 <br></br>

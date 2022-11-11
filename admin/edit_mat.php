@@ -40,12 +40,12 @@ $rs=mysqli_fetch_array($result);
             แก้ไขข้อมูลวัตถุดิบ
             </div>
                 <form name="form1" method="post" action="update_mat.php" enctype="multipart/form-data">
-                <label> รหัสวัตถุดิบ</label>
-                <input type="text" name="matid" class="form-control" readonly value="<?php echo $rs['material_id']?>" >
+                <!-- <label> รหัสวัตถุดิบ</label> -->
+                <input type="hidden" name="matid" class="form-control" readonly value="<?php echo $rs['material_id']?>" >
                 <label> ชื่อวัตถุดิบ</label>
                 <input type="text" name="matname" class="form-control" value="<?php echo $rs['material_name']?>" >
                 <label> จำนวนวัตถุดิบ </label>
-                <input type="number" name="matnum" class="form-control"  value="<?php echo $rs['material_number']?>" > <br>
+                <input type="number" name="matnum" class="form-control"  value="<?php echo $rs['material_number']?>" readonly> <br>
                 <button type="submit" class="btn btn-success">แก้ไข</button>
                 <a class="btn btn-danger" href="sh_mat.php" role="button">ยกเลิก</a>
                 </form>
