@@ -15,8 +15,10 @@ if ($row > 0) {
     $_SESSION["empid"] = $row['emp_id'];
     $_SESSION["name"] = $row['emp_name'];
     $_SESSION["surname"] = $row['emp_sname']; 
-    header("location:index.php");
+    echo "<script> alert('เข้าสู่ระบบสำเร็จ'); </script>";
+    echo "<script> window.location='index.php'; </script>";
 } else {
-    header("location:login_emp.php");
+    echo "<script> alert('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง'); </script>";
+    echo "<script> window.location='login.php'; </script>";
 }
 ?>

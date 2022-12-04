@@ -1,7 +1,7 @@
-<?php 
+<?php
 session_start();
-if(!isset($_SESSION['emp_user'])){
-    header('location:login_emp.php');
+if(!isset($_SESSION['admin_username'])){
+    header('location:login_am.php');
 }
 include 'condb.php';
 $ids = $_GET['id'];
@@ -39,7 +39,7 @@ $row = mysqli_fetch_array($result);
                 <div class="card mb-4 mt-4">
                     <div class="card-header">
                         <i class="fas fa-table me-1"></i>
-                        แสดงรายการสินค้า
+                        แสดงรายการสั่งซื้อ
                         <div>
                             <br>
                             <a href="report_order.php"> <button type="button"
@@ -58,7 +58,6 @@ $row = mysqli_fetch_array($result);
                                         <th>ราคา</th>
                                         <th>จำนวน</th>
                                         <th>ราคารวม</th>
-                                        
                                     </tr>
                                     <!-- <div>
                                     <br><a href="pay_order.php?id=<?= $row['orderID'] ?>" class="btn btn-info" onclick="del1(this.href); return false;">ยืนยังคำสั่งซื้อ</a>
@@ -88,7 +87,7 @@ $row = mysqli_fetch_array($result);
                                 mysqli_close($conn);
                                 ?>
                             </table>
-                            <b>ราคารวมสุทธิ(*หักตามโปรโมชั่น) <?= number_format($sum_total, 2) ?> บาท</b><br><br>
+                            <b>ราคารวมสุทธิ <?= number_format($sum_total, 2) ?> บาท</b><br><br>
                             </td>    
                         </div>
                         <a href="pay_order.php?id=<?= $ids ?>" class = "btn btn-outline-info" onclick="del1(this.href); return false;">ยืนยันคำสั่งซื้อ</a>
@@ -103,6 +102,20 @@ $row = mysqli_fetch_array($result);
 
 </html>
 
+<script>
+    function del(mypage) {
+    var agree = confirm('คุณต้องการยกเลิกใบสั่งซื้อสินค้าหรือไม่');
+    if (gree) {
+        window.location = mypage;
+    }
+}
+function del1(mypage) {
+    var agree = confirm('คุณต้องการปรับสถานะการชำระเงินหรือไม่');
+    if (gree) {
+        window.location = mypage;
+    }
+}
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
 </script>
 <script src="js/scripts.js"></script>
